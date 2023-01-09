@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G-Shop</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- header section starts  -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo">G.Shop <i class="fa-solid fa-store"></i></a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="#products">products</a>
+            <a href="About.html">About</a>
+            <a href="Contactus.html">Contact US</a>
+        </nav>
+        <div class="icons">
+            <a href="#" class="fas fa-shopping-cart"></a>
+            <p id="count">0</p>
+        </div>
+    </header>
+    <!-- header section ends -->
+
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+        <!-- slide num 1 -->
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="content">
+                    <span>nike Gray shoes</span>
+                    <h3>nike metcon shoes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis
+                        aut laboriosam earum dolorem iste atque.</p>
+                </div>
+                <div class="image1">
+                    <img src="images/product-3.png" class="shoe" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- slide num 2 -->
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>Sports water bottles</span>
+                    <h3>adidas water bottle</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis
+                        aut laboriosam earum dolorem iste atque.</p>
+                </div>
+                <div class="image">
+                    <img src="images/product4-removebg-preview.png" class="shoe" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- slide num 3 -->
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>Sports bags</span>
+                    <h3>adidas Sports bags</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos eaque veritatis
+                        aut laboriosam earum dolorem iste atque.</p>
+                </div>
+                <div class="image">
+                    <img src="images/product6-removebg-preview.png" class="shoe" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- slide num 4 -->
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>Airpod Case</span>
+                    <h3>adidas Airpod Case</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos
+                        eaque veritatis
+                        aut laboriosam earum dolorem iste atque.</p>
+                </div>
+                <div class="image">
+                    <img src="images/product2-removebg-preview.png" class="shoe" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- slide num 5 -->
+        <div class="slide-container">
+            <div class="slide">
+                <div class="content">
+                    <span>Sports t-shirts</span>
+                    <h3>adidas t-shirts</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat maiores et eos
+                        eaque veritatis
+                        aut laboriosam earum dolorem iste atque.</p>
+                </div>
+                <div class="image">
+                    <img src="images/product1-removebg-preview.png" class="shoe" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="prev" class="fas fa-chevron-left" onclick="prev()"></div>
+        <div id="next" class="fas fa-chevron-right" onclick="next()"></div>
+    </section>
+    <!-- home section ends -->
+
+
+    <!-- products section starts  -->
+    <section class="products" id="products">
+        <h1 class="heading"> latest <span>products</span> </h1>
+        <!-- fillter -->
+        <ul class="switcher">
+            <li class="active" data-cat=".all">all products</li>
+            <li data-cat=".Black">Nike Shoes Black</li>
+            <li data-cat=".Gray">Nike Shoes Gray</li>
+            <li data-cat=".bottles">Sports water bottles</li>
+            <li data-cat=".bags">Sports bags</li>
+            <li data-cat=".Case">Airpod Case</li>
+        </ul>
+        <!-- fillter -->
+        <div class="box-container" id="root">
+    </section>
+    <!-- products section ends -->
+
+
+    <!-- review section starts  -->
+    <section class="review" id="review">
+        <h1 class="heading"> customer's <span>review</span> </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="images/CUSTOMER3.png" alt="">
+                <h3>Adam </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur
+                    ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores?
+                    Exercitationem, unde rem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/CUSTOMER2.png" alt="">
+                <h3>Lana</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur
+                    ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores?
+                    Exercitationem, unde rem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/CUSTOMER1.jpg" alt="">
+                <h3>joussef </h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, quos eum. Laborum aut a consequatur
+                    ducimus, molestias possimus quisquam rerum temporibus ipsum voluptate accusamus, unde ab asperiores?
+                    Exercitationem, unde rem.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- review section ends -->
+
+
+    <!-- footer section  -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>our stores</h3>
+                <a href="#">Egypt</a>
+                <a href="#">KSA</a>
+                <a href="#">UAE</a>
+                <a href="#">UK</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="index.html">home</a>
+                <a href="About.html">About</a>
+                <a href="#products">products</a>
+                <a href="#review">review</a>
+            </div>
+            <div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my favorite</a>
+                <a href="#">my orders</a>
+                <a href="About.html#newsletter">newsletter</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook "></i></a>
+                <a href="https://www.twitter.com/"><i class="fa-brands fa-square-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            <div class="credit">created by<span> gehad.g.kamel@gmail.com. </span> | all rights reserved</div>
+        </div>
+    </section>
+    <!-- end footer section  -->
+
+    <!-- button up -->
+    <div class="up">
+        <div class="fas fa-chevron-left"></div>
+    </div>
+    <!-- button up -->
+
+    <!-- custom js file link  -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
